@@ -127,7 +127,7 @@ print("el tiempo fue: ", fin-inicio)'''
 
 ##############################################
 
-import tkinter
+'''import tkinter
 import tkinter.ttk as ttk
 
 def despedir():
@@ -161,18 +161,56 @@ var_radio=tkinter.IntVar()
 for c in range(len(nombres)):
     r=tkinter.Radiobutton(ventana,text=nombres[c],value=c, variable=var_radio)
     r.pack()
-ventana.mainloop()
+ventana.mainloop()'''
 
 #############################################
 
-suma = 0.0
+'''suma = 0.0
 for c in range(10):
     suma =suma+0.1
 
 if(suma==1.0):
     print ("la suma es 1.0")
 else:
-    print ("la suma no es 1!")
+    print ("la suma no es 1!")'''
 
 #############################################
     
+class Persona:
+    nombre=""
+    edad=0
+    estatura=0.0
+    def __init__(self,n="",e=0,est=0.0):
+        self.nombre=n
+        self.edad=e
+        self.estatura=est
+
+Persona1=Persona()
+Persona2=Persona()
+Persona1.nombre="Fulanito"
+Persona1.edad=20
+Persona1.estatura=1.70
+Persona2.nombre="Erick"
+Persona2.edad=22
+Persona2.estatura=1.65
+print (Persona1.nombre)
+
+Per1=Persona("Pedro",30,1.73)
+Per2=Persona("Pablo",32,1.75)
+print (Per2.nombre)
+print (Per1.edad)
+
+arreglo=[]
+arreglo.append(Persona("Maria",19,1.60))
+arreglo.append(Persona("Carlos",21,1.68))
+arreglo.append(Persona("Javier",34,1.68))
+arreglo.append(Persona("Jorge",25,1.78))
+arreglo.append(Persona("Manuel",22,1.68))
+arreglo.append(Persona("Josue",21,1.72))
+for c in arreglo:
+    print (c.nombre,c.edad,c.estatura)
+
+prueba=arreglo[1]
+prueba.nombre="Julieta"
+for c in arreglo:
+    print (c.nombre,c.edad,c.estatura)

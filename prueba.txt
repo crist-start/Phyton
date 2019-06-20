@@ -1,0 +1,8 @@
+Julanito,20,1.78
+Maria,19,1.60
+Lore,25,1.71
+Sara,20,1.87
+Laura,19,1.76
+Katja,12,1.42
+Cristian,17,1.59
+Gustavo,21,1.79
